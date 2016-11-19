@@ -114,7 +114,12 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>СправочнаяИформация</Subsystem>
+			<Subsystem>УправлениеБиблиотекой</Subsystem>
+			<Subsystem>Настройки</Subsystem>
 			<CommonPicture>СправочнаяИнформация48</CommonPicture>
+			<CommonPicture>УправлениеБиблиотекой48</CommonPicture>
+			<CommonPicture>Настройка48</CommonPicture>
+			<Role>Администратор</Role>
 			<Catalog>Авторы</Catalog>
 			<Catalog>Жанры</Catalog>
 			<Catalog>Книги</Catalog>
@@ -123,8 +128,11 @@
 			<Catalog>Серии</Catalog>
 			<Catalog>ФорматКниги</Catalog>
 			<Catalog>СостояниеКниги</Catalog>
+			<Catalog>Скрипты</Catalog>
 			<Document>ПополнениеБиблиотеки</Document>
 			<Document>ВыходКнигиИзБиблиотеки</Document>
+			<DataProcessor>ЭкспортБиблиотеки</DataProcessor>
+			<AccumulationRegister>НаличиеКниг</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
