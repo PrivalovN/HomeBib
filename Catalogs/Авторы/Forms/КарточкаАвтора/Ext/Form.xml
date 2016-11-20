@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NewWriteProcessing">ОбработкаЗаписиНового</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="грОбщая" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="грОбщаяРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="грАвтор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр автор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грАвторРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Наименование" id="48">
+							<DataPath>Объект.Description</DataPath>
+							<AutoChoiceIncomplete>true</AutoChoiceIncomplete>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<InputField name="ПолноеНаименование" id="38">
+							<DataPath>Объект.ПолноеНаименование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ф.И.О.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<UsualGroup name="грДатыЖизни" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр даты жизни</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр даты жизни</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грДатыЖизниРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<InputField name="ДатаРж" id="7">
+									<DataPath>Объект.ДатаРж</DataPath>
+									<ContextMenu name="ДатаРжКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ДатаРжРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ДатаСм" id="29">
+									<DataPath>Объект.ДатаСм</DataPath>
+									<ContextMenu name="ДатаСмКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ДатаСмРасширеннаяПодсказка" id="31"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грБиография" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр биография</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр биография</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грБиографияРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<TextDocumentField name="Биография" id="35">
+									<DataPath>Объект.Биография</DataPath>
+									<ContextMenu name="БиографияКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="БиографияРасширеннаяПодсказка" id="37"/>
+								</TextDocumentField>
+								<PictureDecoration name="ФотоАвтора" id="43">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фото автора</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФотоАвтораКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ФотоАвтораРасширеннаяПодсказка" id="45"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПутьКФотоАвтора" id="32">
+							<DataPath>Объект.ПутьКФотоАвтора</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПутьКФотоАвтораКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ПутьКФотоАвтораРасширеннаяПодсказка" id="34"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="грПроизведения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Произведения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр произведения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грПроизведенияРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Table name="Произведения" id="10">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Произведения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПроизведенияКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ПроизведенияКоманднаяПанель" id="12"/>
+							<ExtendedTooltip name="ПроизведенияРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ПроизведенияСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>Произведения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизведенияСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ПроизведенияСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПроизведенияСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>Произведения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизведенияСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ПроизведенияСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПроизведенияУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>Произведения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПроизведенияУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ПроизведенияУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПроизведенияНомерСтроки" id="23">
+									<DataPath>Объект.Произведения.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроизведенияНомерСтрокиКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ПроизведенияНомерСтрокиРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<InputField name="ПроизведенияПроизведение" id="26">
+									<DataPath>Объект.Произведения.Произведение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроизведенияПроизведениеКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПроизведенияПроизведениеРасширеннаяПодсказка" id="28"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Авторы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
